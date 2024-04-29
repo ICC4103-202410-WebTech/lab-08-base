@@ -1,24 +1,19 @@
-# README
+# Lab 08
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this lab you have to allow users to create and update `Post`’s through the application.
 
-Things you may want to cover:
+## Instructions
 
-* Ruby version
+1. To manage creation:
 
-* System dependencies
+    1.1. Create the `new` and `create` actions for the `Posts`’s controller
 
-* Configuration
+    1.2. Create the corresponding views (`app/views/posts/new.html.erb`, and `app/views/posts/_form.html.erb`)
 
-* Database creation
+2. To manage updating:
 
-* Database initialization
+    3.1. Create the `edit` and `update` actions for the `Posts`’s controller
 
-* How to run the test suite
+    3.2. Create the corresponding views (`app/views/posts/edit.html.erb`, and use the existing `app/views/posts/_form.html.erb` partial)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Be sure to filter the parameters received by the controller through the use of methods `use` and `permit`
